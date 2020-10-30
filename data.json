@@ -2,31 +2,38 @@
     "myBudget": [
       {
         "title": "Eat out",
-        "budget": 100
+        "budget": 100,
+        "color": "#A94728"
       },
       {
         "title": "Rent",
-        "budget": 800
+        "budget": 800,
+        "color": "#43A928"
       },
       {
         "title": "Grocery",
-        "budget": 200
+        "budget": 200,
+        "color": "#28A99A"
       },
       {
         "title": "Credit Card",
-        "budget": 150
+        "budget": 150,
+        "color": "#2848A9"
       },
       {
         "title": "Car payment",
-        "budget": 300
+        "budget": 300,
+        "color": "#7628A9"
       },
       {
         "title": "Internet",
-        "budget": 75
+        "budget": 75,
+        "color": "#A9288E"
       },
       {
         "title": "Electric bill",
-        "budget": 50
+        "budget": 50,
+        "color": "#A9288E"
       }
     ]
   }

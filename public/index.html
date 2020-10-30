@@ -145,15 +145,6 @@
                 {
                     data: [],
                     backgroundColor: [
-                        '#A94728',
-                        '#ff6384',
-                        '#36a2eb',
-                        '#fd6b19',
-                        '#3BA928',
-                        '#28A99C',
-                        '#8928A9',
-                        '#A9287B',
-                        '#A9284B',
 
                     ],
                 }
@@ -170,12 +161,13 @@
         }
 
         function getBudget() {
-            axios.get('/budget')
+            axios.get('/budgetItem')
             .then(function (res) {
                 console.log(res);
-                for( var i = 0; i < res.data.myBudget.length; i++) {
-                    dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
-                    dataSource.labels[i] = res.data.myBudget[i].title;
+                for( var i = 0; i < res.data.length; i++) {
+                    dataSource.labels[i] = res.data[i].title;
+                    dataSource.datasets[0].data[i] = res.data[i].budget;
+                    dataSource.datasets[0].backgroundColor[i] = res.data[i].color;
                 }
                 createChart();
             });
